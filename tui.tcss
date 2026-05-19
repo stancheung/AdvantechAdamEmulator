@@ -1,0 +1,38 @@
+Screen {
+    align: center middle;
+}
+
+Checkbox {
+    color: $text;
+    background: $surface;           /* This matches the default */
+    width: 30%;
+    content-align: center middle;
+}
+
+Checkbox.-on {
+    background: $accent;            /* nice highlight when checked */
+    color: white;
+}
+
+Checkbox:hover {
+    background: $boost;
+}
+
+Checkbox.-on:hover {
+    background: $accent-lighten-1;
+}
+
+Checkbox .toggle--label {
+    color: $text;
+    background: transparent;
+}
+
+Checkbox.-on .toggle--label {
+    color: $surface;
+    background: transparent;
+}
+
+Checkbox.-on > .toggle--button {
+    display: none;
+    background: $accent-lighten-1;
+}
